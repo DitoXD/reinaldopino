@@ -1,51 +1,42 @@
 import React from "react";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import Resume from "../assets/Reinaldo Pino Resume 2023.pdf";
-import Desk from '../assets/office-desk.jpg'
-
+import Button from "./Button";
+import siteConfig from "../data/siteConfig.json";
+import { backgroundImages, resume } from "../utils/imageRegistry";
 
 const About = () => {
+  const { personal, about } = siteConfig;
+  const bgImage = backgroundImages[about.backgroundImage];
+
   return (
-    <div name="about" style={{backgroundImage: `url(${Desk})`}} className="w-full h-screen bg-cover bg-fixed bg-center text-white">
+    <div
+      name="about"
+      style={{ backgroundImage: `url(${bgImage})` }}
+      className="w-full h-screen bg-cover bg-fixed bg-center text-white"
+    >
       <div className="flex flex-col justify-center items-center w-full h-full bg-black bg-opacity-80">
         <div className="max-w-[1080px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
             <p className="text-4xl font-bold inline border-b-4 border-[#1abbec]">
-              About
+              {about.title}
             </p>
           </div>
-          <div></div>
         </div>
         <div className="max-w-[1080px] w-full grid sm:grid-cols-2 gap-8 px-4">
           <div className="sm:text-right font-bold">
             <p className="text-4xl">
-              Who is... <span className="text-[#1abbec]">Reinaldo Pino</span>?
+              {about.subtitle} <span className="text-[#1abbec]">{personal.name}</span>?
             </p>
           </div>
           <div>
-            <p>
-              I'm a graduate of the University of Technology of Jamaica with a
-              Bachelors in Computer Science. I am passionate about developing
-              high quality software consistently and continue to do so while
-              maintaining a high standard of professionalism. I communicate well
-              with others and exude charismatic qualities to show I blend in
-              well with teams of varying sizes. To see more details about me,
-              please see my resume below or contact me to schedule an interview.
-            </p>
+            <p>{about.bio}</p>
           </div>
         </div>
-        <div>
-          <a href={Resume}>
-            <div className="z-0 mt-8 md:mt-16">
-              <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#1abbec] hover:border-[#1abbec] duration-200">
-                Download Resume
-                <span className="duration-300">
-                  <BsFillPersonLinesFill className="ml-3" />
-                </span>
-              </button>
-            </div>
-          </a>
-          <div></div>
+        <div className="z-0 mt-8 md:mt-16">
+          <Button href={resume} variant="outline" className="my-2">
+            {about.ctaText}
+            <BsFillPersonLinesFill className="ml-3" />
+          </Button>
         </div>
       </div>
     </div>

@@ -1,0 +1,164 @@
+{
+  "personal": {
+    "name": "Reinaldo Pino",
+    "title": "Full Stack Developer",
+    "email": "reinaldopino4@gmail.com",
+    "resumePath": "Reinaldo Pino Resume 2026.pdf"
+  },
+  "home": {
+    "greeting": "Welcome! My name is",
+    "tagline": "I'm a full-stack developer who loves to create efficient, fully functional applications to satisfy the digital needs of clients. My current focus is improving my design skills to provide a better user experience on the platforms I create.",
+    "ctaText": "View Projects",
+    "backgroundImage": "vscode"
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "Who is...",
+    "bio": "I'm a graduate of the University of Technology of Jamaica with a Bachelors in Computer Science. I am passionate about developing high quality software consistently and continue to do so while maintaining a high standard of professionalism. I communicate well with others and exude charismatic qualities to show I blend in well with teams of varying sizes. To see more details about me, please see my resume below or contact me to schedule an interview.",
+    "ctaText": "Download Resume",
+    "backgroundImage": "office-desk"
+  },
+  "skills": {
+    "title": "Skills",
+    "description": "These are the Languages and Frameworks I've worked with and there will be others pending.",
+    "items": [
+      { "name": "Flutter", "icon": "flutter" },
+      { "name": "React JS", "icon": "react" },
+      { "name": "Node JS", "icon": "node" },
+      { "name": "Python", "icon": "python" },
+      { "name": "JavaScript", "icon": "javascript" },
+      { "name": "GitHub", "icon": "github" },
+      { "name": "Tailwind CSS", "icon": "tailwind" },
+      { "name": "HTML", "icon": "html" }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "description": "My professional journey",
+    "items": [
+      {
+        "company": "WiLoan",
+        "position": "Software Developer",
+        "duration": "Jul 2025 - Jan 2026",
+        "location": "Port of Spain, Trinidad",
+        "type": "Remote",
+        "highlights": [
+          "Re-architected and rebuilt the company's core backend infrastructure using Laravel, significantly improving scalability, reliability, and long-term maintainability",
+          "Led end-to-end UI and UX enhancements across the platform, including the React web dashboard and Flutter mobile application, delivering a more intuitive and consistent user experience",
+          "Ensured seamless integration between backend services, web, and mobile applications, strengthening overall system performance and platform cohesion"
+        ]
+      },
+      {
+        "company": "Enterprise by Island Routes",
+        "position": "Software Developer",
+        "duration": "Jul 2025 - Jan 2026",
+        "location": "Montego Bay, Jamaica",
+        "type": "Full-time",
+        "highlights": [
+          "Led a focused UI and UX overhaul of the employee portal within an existing C# / ASP.NET HR system, improving usability and day-to-day employee interactions",
+          "Designed and delivered a full-stack Resmark integration for the accounts department using React (frontend), ASP.NET (backend), and SQL, streamlining payment-related workflows",
+          "Replaced and upgraded ASP.NET-based payment gateways for ATL Automotive and ATL Commercial, successfully migrating to PowerTranz to improve transaction reliability and security"
+        ]
+      },
+      {
+        "company": "Shift Left Limited / Sagicor Financial Corporation",
+        "position": "Quality Assurance Engineer",
+        "duration": "Jan 2024 - Apr 2025",
+        "location": "Kingston, Jamaica",
+        "type": "Remote",
+        "highlights": [
+          "Conducted manual testing of the new IPO portal to ensure functionality, performance, and security",
+          "Designed, documented, and executed comprehensive test cases using Jira for defect tracking and project management",
+          "Collaborated with developers and QA team to support automation efforts and streamline regression testing"
+        ]
+      },
+      {
+        "company": "Arlington Financial",
+        "position": "Software Developer",
+        "duration": "Nov 2023 - Oct 2024",
+        "location": "Florida, United States",
+        "type": "Remote",
+        "highlights": [
+          "Led the refactoring of the backend system using Node.js, improving code maintainability and performance",
+          "Designed and implemented version 2.0.0 of the company's API, enhancing scalability and integration capabilities",
+          "Worked closely with product stakeholders to align backend development with evolving business requirements"
+        ]
+      },
+      {
+        "company": "Shift Left Limited / National Commercial Bank of Jamaica",
+        "position": "Software Developer",
+        "duration": "Dec 2021 - Oct 2023",
+        "location": "Kingston, Jamaica",
+        "type": "Remote",
+        "highlights": [
+          "Developed full-stack features for the Credit Card Web Portal using React (frontend) and Java Spring Boot (backend)",
+          "Assisted in developing systems to handle customer inputs for the online banking platform, improving turnaround time and user experience",
+          "Collaborated in Agile teams to deliver secure, user-focused business application solutions"
+        ]
+      },
+      {
+        "company": "STEAM House",
+        "position": "Programming Teacher",
+        "duration": "Sep 2021 - Present",
+        "location": "Kingston, Jamaica",
+        "type": "Remote",
+        "highlights": [
+          "Instructed students aged 12-18 in Python, introducing core programming principles and logical thinking",
+          "Delivered advanced programming courses in Java and JavaScript, tailored to student aptitude levels",
+          "Promoted creativity and innovation in programming through hands-on projects and interactive learning methods"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Any projects that you might be looking for are private. Ask me about them.",
+    "items": [
+      {
+        "title": "Youtube Converter",
+        "image": "youtube-logo",
+        "codeUrl": "https://github.com/DitoXD/YoutubeConverter1.0"
+      },
+      {
+        "title": "Tic Tac Toe GUI w/ AI",
+        "image": "tic-tac-toe",
+        "codeUrl": "https://github.com/DitoXD/tictactoe-pygame"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Submit the form below or send me an email",
+    "formEndpoint": "https://getform.io/f/fabb62f9-71f6-4051-9340-5ada5c9e982c",
+    "submitText": "Let's Collaborate"
+  },
+  "social": [
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/in/reinaldo-pino-352350190",
+      "label": "LinkedIn",
+      "bgColor": "bg-blue-600",
+      "ariaLabel": "Visit LinkedIn profile"
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/DitoXD",
+      "label": "Github",
+      "bgColor": "bg-[#333333]",
+      "ariaLabel": "Visit GitHub profile"
+    },
+    {
+      "type": "email",
+      "label": "Email",
+      "bgColor": "bg-[#24ba1c]",
+      "ariaLabel": "Send email"
+    },
+    {
+      "type": "resume",
+      "label": "Resume",
+      "bgColor": "bg-[#846f96]",
+      "ariaLabel": "Download resume"
+    }
+  ],
+  "navigation": ["home", "skills", "experience", "projects", "about", "contact"]
+}
