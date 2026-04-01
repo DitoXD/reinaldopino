@@ -7,6 +7,17 @@ import javascript from "../assets/javascript.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import html from "../assets/html.png";
+import php from "../assets/php.png";
+import laravel from "../assets/laravel.png";
+import postgresql from "../assets/postgresql.png";
+import mysql from "../assets/mysql.png";
+import css from "../assets/css.png";
+import csharp from "../assets/csharp.png";
+import awsS3 from "../assets/aws-s3.png";
+import digitalocean from "../assets/digitalocean.png";
+import godaddy from "../assets/godaddy.png";
+import vuejs from "../assets/vuejs.png";
+import linux from "../assets/linux.png";
 
 // Project images
 import youtubeLogo from "../assets/youtube-logo.png";
@@ -31,6 +42,17 @@ export const skillIcons = {
   github,
   tailwind,
   html,
+  php,
+  laravel,
+  postgresql,
+  mysql,
+  css,
+  csharp,
+  "aws-s3": awsS3,
+  digitalocean,
+  godaddy,
+  vuejs,
+  linux,
 };
 
 export const projectImages = {

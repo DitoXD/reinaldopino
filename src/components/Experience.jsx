@@ -12,7 +12,7 @@ const Experience = () => {
   return (
     <div name="experience" className="bg-[#0a192f] text-gray-300 w-full py-16">
       <div className="max-w-[1080px] mx-auto p-4 flex flex-col justify-center w-full">
-        <div>
+        <div data-aos="fade-up">
           <p className="text-4xl font-bold inline border-b-4 border-[#1abbec]">
             {experience.title}
           </p>
@@ -20,8 +20,8 @@ const Experience = () => {
         </div>
         <div className="grid gap-6 py-8">
           {experience.items.map((item, index) => (
+            <div key={`${item.company}-${index}`} data-aos="fade-right" data-aos-delay={index * 100}>
             <ExperienceCard
-              key={`${item.company}-${index}`}
               company={item.company}
               position={item.position}
               duration={item.duration}
@@ -30,6 +30,7 @@ const Experience = () => {
               companyUrl={item.companyUrl}
               highlights={item.highlights}
             />
+            </div>
           ))}
         </div>
       </div>

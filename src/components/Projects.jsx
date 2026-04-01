@@ -12,7 +12,7 @@ const Projects = () => {
       className="bg-[#0a192f] text-gray-300 w-full md:h-screen pb-48 sm:pb-10"
     >
       <div className="max-w-[1080px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
+        <div className="pb-8" data-aos="fade-up">
           <p className="text-4xl font-bold inline border-b-4 border-[#1abbec]">
             {projects.title}
           </p>
@@ -20,14 +20,15 @@ const Projects = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-4">
-          {projects.items.map((project) => (
+          {projects.items.map((project, index) => (
+            <div key={project.title} data-aos="zoom-in" data-aos-delay={index * 150}>
             <ProjectCard
-              key={project.title}
               image={projectImages[project.image]}
               title={project.title}
               demoUrl={project.demoUrl}
               codeUrl={project.codeUrl}
             />
+            </div>
           ))}
         </div>
       </div>

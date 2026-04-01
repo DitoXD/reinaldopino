@@ -20,16 +20,27 @@
   },
   "skills": {
     "title": "Skills",
-    "description": "These are the Languages and Frameworks I've worked with and there will be others pending.",
+    "description": "Languages, frameworks, tools, and platforms I work with.",
     "items": [
-      { "name": "Flutter", "icon": "flutter" },
       { "name": "React JS", "icon": "react" },
+      { "name": "JavaScript", "icon": "javascript" },
+      { "name": "HTML", "icon": "html" },
+      { "name": "CSS", "icon": "css" },
+      { "name": "Tailwind CSS", "icon": "tailwind" },
+      { "name": "Vue JS", "icon": "vuejs" },
+      { "name": "Flutter", "icon": "flutter" },
       { "name": "Node JS", "icon": "node" },
       { "name": "Python", "icon": "python" },
-      { "name": "JavaScript", "icon": "javascript" },
+      { "name": "PHP", "icon": "php" },
+      { "name": "Laravel", "icon": "laravel" },
+      { "name": "C# / ASP.NET", "icon": "csharp" },
+      { "name": "PostgreSQL", "icon": "postgresql" },
+      { "name": "MySQL", "icon": "mysql" },
+      { "name": "Linux", "icon": "linux" },
       { "name": "GitHub", "icon": "github" },
-      { "name": "Tailwind CSS", "icon": "tailwind" },
-      { "name": "HTML", "icon": "html" }
+      { "name": "AWS S3", "icon": "aws-s3" },
+      { "name": "DigitalOcean", "icon": "digitalocean" },
+      { "name": "GoDaddy", "icon": "godaddy" }
     ]
   },
   "experience": {

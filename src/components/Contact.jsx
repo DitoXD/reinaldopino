@@ -15,6 +15,7 @@ const Contact = () => {
           method="POST"
           action={contact.formEndpoint}
           className="flex flex-col max-w-[600px] w-full"
+          data-aos="fade-up"
         >
           <div className="pb-8">
             <p className="text-4xl font-bold inline border-b-4 border-[#1abbec]">

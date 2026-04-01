@@ -59,7 +59,7 @@ const Navbar = () => {
     };
   });
 
-  const navbarClass = `fixed w-full h-[80px] flex justify-between items-center px-4 text-gray-300 transition-colors duration-300 ${
+  const navbarClass = `fixed w-full h-[80px] flex justify-between items-center px-4 text-gray-300 transition-colors duration-300 z-50 ${
     scrolled ? "bg-[#0a192f]" : "bg-transparent"
   }`;
 
