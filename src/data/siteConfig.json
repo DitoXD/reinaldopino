@@ -123,17 +123,22 @@
   },
   "projects": {
     "title": "Projects",
-    "description": "Any projects that you might be looking for are private. Ask me about them.",
+    "description": "A selection of websites and applications I've built for clients.",
     "items": [
       {
-        "title": "Youtube Converter",
-        "image": "youtube-logo",
-        "codeUrl": "https://github.com/DitoXD/YoutubeConverter1.0"
+        "title": "Cabinet Supply JA",
+        "image": "cabinet-supply-ja",
+        "demoUrl": "https://cabinetsupplyja.reinaldopino.com"
       },
       {
-        "title": "Tic Tac Toe GUI w/ AI",
-        "image": "tic-tac-toe",
-        "codeUrl": "https://github.com/DitoXD/tictactoe-pygame"
+        "title": "Risto",
+        "image": "risto",
+        "demoUrl": "https://risto.reinaldopino.com"
+      },
+      {
+        "title": "Negril Muay Thai Gym",
+        "image": "negril-muay-thai",
+        "demoUrl": "https://www.negrilmuaythaigym.com"
       }
     ]
   },

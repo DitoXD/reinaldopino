@@ -20,8 +20,9 @@ import vuejs from "../assets/vuejs.png";
 import linux from "../assets/linux.png";
 
 // Project images
-import youtubeLogo from "../assets/youtube-logo.png";
-import ticTacToe from "../assets/tic-tac-toe.png";
+import cabinetSupplyJa from "../assets/cabinet-supply-ja.jpg";
+import risto from "../assets/risto.jpg";
+import negrilMuayThai from "../assets/negril-muay-thai.jpg";
 
 // Background images
 import vscode from "../assets/vscode.jpg";
@@ -56,8 +57,9 @@ export const skillIcons = {
 };
 
 export const projectImages = {
-  "youtube-logo": youtubeLogo,
-  "tic-tac-toe": ticTacToe,
+  "cabinet-supply-ja": cabinetSupplyJa,
+  risto,
+  "negril-muay-thai": negrilMuayThai,
 };
 
 export const backgroundImages = {
