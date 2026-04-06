@@ -19,7 +19,7 @@ const Projects = () => {
           <p className="py-4">{projects.description}</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 gap-4">
           {projects.items.map((project, index) => (
             <div key={project.title} data-aos="zoom-in" data-aos-delay={index * 150}>
             <ProjectCard

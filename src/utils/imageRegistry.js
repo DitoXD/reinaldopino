@@ -23,6 +23,7 @@ import linux from "../assets/linux.png";
 import cabinetSupplyJa from "../assets/cabinet-supply-ja.jpg";
 import risto from "../assets/risto.jpg";
 import negrilMuayThai from "../assets/negril-muay-thai.jpg";
+import forexJa from "../assets/forex-ja.jpg";
 
 // Background images
 import vscode from "../assets/vscode.jpg";
@@ -60,6 +61,7 @@ export const projectImages = {
   "cabinet-supply-ja": cabinetSupplyJa,
   risto,
   "negril-muay-thai": negrilMuayThai,
+  "forex-ja": forexJa,
 };
 
 export const backgroundImages = {
