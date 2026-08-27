@@ -9,11 +9,12 @@ const Button = ({
   type = "button",
   ...props
 }) => {
-  const baseStyles = "px-6 py-3 flex items-center font-bold transition-all duration-200";
+  const baseStyles = "px-6 py-3 flex items-center font-semibold font-body transition-all duration-300 rounded-lg";
 
   const variants = {
-    outline: "text-white border-2 hover:bg-[#1abbec] hover:border-[#1abbec]",
-    primary: "bg-white text-gray-700 rounded-lg hover:bg-gray-100",
+    outline: "text-white border border-navy-border hover:border-cyan hover:text-cyan",
+    primary: "btn-gradient text-navy font-bold",
+    ghost: "text-slate-light border border-navy-border hover:border-cyan/50 hover:text-cyan",
   };
 
   const combinedClassName = `${baseStyles} ${variants[variant]} ${className}`;

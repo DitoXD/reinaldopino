@@ -6,10 +6,10 @@
     "resumePath": "Reinaldo Pino Resume 2026.pdf"
   },
   "home": {
-    "greeting": "Welcome! My name is",
-    "tagline": "I'm a full-stack developer who loves to create efficient, fully functional applications to satisfy the digital needs of clients. My current focus is improving my design skills to provide a better user experience on the platforms I create.",
-    "ctaText": "View Projects",
-    "backgroundImage": "vscode"
+    "preHeading": "Full Stack Developer",
+    "tagline": "Full-stack developer building scalable applications from concept to deployment. Focused on clean architecture, intuitive interfaces, and reliable systems.",
+    "ctaPrimary": "View Work",
+    "ctaSecondary": "Get in Touch"
   },
   "about": {
     "title": "About",
@@ -19,28 +19,43 @@
     "backgroundImage": "office-desk"
   },
   "skills": {
-    "title": "Skills",
-    "description": "Languages, frameworks, tools, and platforms I work with.",
-    "items": [
-      { "name": "React JS", "icon": "react" },
-      { "name": "JavaScript", "icon": "javascript" },
-      { "name": "HTML", "icon": "html" },
-      { "name": "CSS", "icon": "css" },
-      { "name": "Tailwind CSS", "icon": "tailwind" },
-      { "name": "Vue JS", "icon": "vuejs" },
-      { "name": "Flutter", "icon": "flutter" },
-      { "name": "Node JS", "icon": "node" },
-      { "name": "Python", "icon": "python" },
-      { "name": "PHP", "icon": "php" },
-      { "name": "Laravel", "icon": "laravel" },
-      { "name": "C# / ASP.NET", "icon": "csharp" },
-      { "name": "PostgreSQL", "icon": "postgresql" },
-      { "name": "MySQL", "icon": "mysql" },
-      { "name": "Linux", "icon": "linux" },
-      { "name": "GitHub", "icon": "github" },
-      { "name": "AWS S3", "icon": "aws-s3" },
-      { "name": "DigitalOcean", "icon": "digitalocean" },
-      { "name": "GoDaddy", "icon": "godaddy" }
+    "title": "Tech Stack",
+    "description": "Languages, frameworks, and tools I build with.",
+    "categories": [
+      {
+        "label": "Frontend",
+        "items": [
+          { "name": "React JS", "icon": "react" },
+          { "name": "Vue JS", "icon": "vuejs" },
+          { "name": "JavaScript", "icon": "javascript" },
+          { "name": "HTML", "icon": "html" },
+          { "name": "CSS", "icon": "css" },
+          { "name": "Tailwind CSS", "icon": "tailwind" }
+        ]
+      },
+      {
+        "label": "Backend & Mobile",
+        "items": [
+          { "name": "Node JS", "icon": "node" },
+          { "name": "Python", "icon": "python" },
+          { "name": "PHP", "icon": "php" },
+          { "name": "Laravel", "icon": "laravel" },
+          { "name": "C# / ASP.NET", "icon": "csharp" },
+          { "name": "Flutter", "icon": "flutter" }
+        ]
+      },
+      {
+        "label": "Database & Infrastructure",
+        "items": [
+          { "name": "PostgreSQL", "icon": "postgresql" },
+          { "name": "MySQL", "icon": "mysql" },
+          { "name": "GitHub", "icon": "github" },
+          { "name": "Linux", "icon": "linux" },
+          { "name": "AWS S3", "icon": "aws-s3" },
+          { "name": "DigitalOcean", "icon": "digitalocean" },
+          { "name": "GoDaddy", "icon": "godaddy" }
+        ]
+      }
     ]
   },
   "experience": {
@@ -48,9 +63,33 @@
     "description": "My professional journey",
     "items": [
       {
+        "company": "Enterprise by Island Routes",
+        "position": "Software Developer",
+        "duration": "Jul 2026 - Present",
+        "location": "Montego Bay, Jamaica",
+        "type": "Remote",
+        "highlights": [
+          "Contributing to the development of enterprise HR software, building out new modules and features that support core employee and workforce management functions",
+          "Delivering feature enhancements and workflow improvements across an HRIS platform, translating business requirements into functional, well-structured solutions",
+          "Collaborating within an agile, ticket-based delivery process, managing code through version control and sandbox environments while meeting acceptance criteria in regular cross-team reviews"
+        ]
+      },
+      {
+        "company": "WiPay Business Solutions Limited",
+        "position": "Software Developer",
+        "duration": "Mar 2026 - Present",
+        "location": "Port of Spain, Trinidad",
+        "type": "Remote",
+        "highlights": [
+          "Analyzed system architecture and legacy components across the Vue.js / Node.js codebase to identify modernization opportunities, proposing updated solutions in Flutter, React, and Python to improve scalability and maintainability",
+          "Mapped end-to-end manual business processes, translating undocumented workflows into clear technical specifications for Flutter cross-platform interfaces and Node.js / Python services backed by PostgreSQL, streamlining and automating operations",
+          "Evaluated incoming requirements and designed modernized implementations in Flutter, TypeScript, and Python, bridging manual operations with software-driven, cross-platform (mobile, web, desktop) solutions"
+        ]
+      },
+      {
         "company": "WiLoan",
         "position": "Software Developer",
-        "duration": "Jul 2025 - Jan 2026",
+        "duration": "Jul 2025 - Feb 2026",
         "location": "Port of Spain, Trinidad",
         "type": "Remote",
         "highlights": [
@@ -64,7 +103,7 @@
         "position": "Software Developer",
         "duration": "Jul 2025 - Jan 2026",
         "location": "Montego Bay, Jamaica",
-        "type": "Full-time",
+        "type": "On-site",
         "highlights": [
           "Led a focused UI and UX overhaul of the employee portal within an existing C# / ASP.NET HR system, improving usability and day-to-day employee interactions",
           "Designed and delivered a full-stack Resmark integration for the accounts department using React (frontend), ASP.NET (backend), and SQL, streamlining payment-related workflows",
@@ -76,7 +115,7 @@
         "position": "Quality Assurance Engineer",
         "duration": "Jan 2024 - Apr 2025",
         "location": "Kingston, Jamaica",
-        "type": "Remote",
+        "type": "Hybrid",
         "highlights": [
           "Conducted manual testing of the new IPO portal to ensure functionality, performance, and security",
           "Designed, documented, and executed comprehensive test cases using Jira for defect tracking and project management",
@@ -100,7 +139,7 @@
         "position": "Software Developer",
         "duration": "Dec 2021 - Oct 2023",
         "location": "Kingston, Jamaica",
-        "type": "Remote",
+        "type": "Hybrid",
         "highlights": [
           "Developed full-stack features for the Credit Card Web Portal using React (frontend) and Java Spring Boot (backend)",
           "Assisted in developing systems to handle customer inputs for the online banking platform, improving turnaround time and user experience",
@@ -126,16 +165,6 @@
     "description": "A selection of websites and applications I've built for clients.",
     "items": [
       {
-        "title": "Cabinet Supply JA",
-        "image": "cabinet-supply-ja",
-        "demoUrl": "https://cabinetsupplyja.reinaldopino.com"
-      },
-      {
-        "title": "Risto",
-        "image": "risto",
-        "demoUrl": "https://risto.reinaldopino.com"
-      },
-      {
         "title": "Negril Muay Thai Gym",
         "image": "negril-muay-thai",
         "demoUrl": "https://www.negrilmuaythaigym.com"
@@ -145,13 +174,14 @@
         "image": "forex-ja",
         "demoUrl": "https://forexja.reinaldopino.com"
       }
-    ]
+    ],
+    "note": "Additional sites and projects are unlisted until further notice."
   },
   "contact": {
     "title": "Contact",
-    "description": "Submit the form below or send me an email",
+    "description": "Have a project in mind or want to discuss an opportunity? I'm always open to new collaborations and interesting technical challenges.",
     "formEndpoint": "https://getform.io/f/fabb62f9-71f6-4051-9340-5ada5c9e982c",
-    "submitText": "Let's Collaborate"
+    "submitText": "Send Message"
   },
   "social": [
     {
@@ -181,5 +211,11 @@
       "ariaLabel": "Download resume"
     }
   ],
-  "navigation": ["home", "skills", "experience", "projects", "about", "contact"]
+  "navItems": [
+    { "id": "home", "label": "Home" },
+    { "id": "projects", "label": "Work" },
+    { "id": "skills", "label": "Stack" },
+    { "id": "experience", "label": "Experience" },
+    { "id": "contact", "label": "Contact" }
+  ]
 }

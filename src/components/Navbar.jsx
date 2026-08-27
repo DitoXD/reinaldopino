@@ -1,10 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
-import SocialLink from "./SocialLink";
 import siteConfig from "../data/siteConfig.json";
-import { logo, resume } from "../utils/imageRegistry";
-import { socialIcons } from "../utils/iconRegistry";
+import { resume } from "../utils/imageRegistry";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -13,7 +11,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   const handleScroll = useCallback(() => {
-    const shouldBeScrolled = window.scrollY > 250;
+    const shouldBeScrolled = window.scrollY > 80;
     if (shouldBeScrolled !== scrolled) {
       setScrolled(shouldBeScrolled);
     }
@@ -21,7 +19,6 @@ const Navbar = () => {
 
   useEffect(() => {
     let ticking = false;
-
     const throttledScroll = () => {
       if (!ticking) {
         window.requestAnimationFrame(() => {
@@ -31,61 +28,59 @@ const Navbar = () => {
         ticking = true;
       }
     };
-
     window.addEventListener("scroll", throttledScroll);
-
-    return () => {
-      window.removeEventListener("scroll", throttledScroll);
-    };
+    return () => window.removeEventListener("scroll", throttledScroll);
   }, [handleScroll]);
 
-  // Build social links from config
-  const socialLinks = siteConfig.social.map((link) => {
-    let href;
-    if (link.type === "email") {
-      href = `mailto:${siteConfig.personal.email}`;
-    } else if (link.type === "resume") {
-      href = resume;
-    } else {
-      href = link.url;
-    }
-
-    return {
-      href,
-      icon: socialIcons[link.type],
-      label: link.label,
-      bgColor: link.bgColor,
-      ariaLabel: link.ariaLabel,
-    };
-  });
-
-  const navbarClass = `fixed w-full h-[80px] flex justify-between items-center px-4 text-gray-300 transition-colors duration-300 z-50 ${
-    scrolled ? "bg-[#0a192f]" : "bg-transparent"
-  }`;
-
   return (
-    <div className={navbarClass}>
-      <div>
-        <img src={logo} alt="Logo" style={{ width: "75px" }} />
-      </div>
+    <div
+      className={`fixed w-full h-[72px] flex justify-between items-center px-8 md:px-16 transition-all duration-700 z-50 ${
+        scrolled
+          ? "bg-void/90 backdrop-blur-xl"
+          : "bg-transparent"
+      }`}
+    >
+      {/* Wordmark */}
+      <Link
+        to="home"
+        smooth={true}
+        duration={500}
+        className="font-serif font-semibold text-lg tracking-[2px] text-cream cursor-pointer"
+      >
+        REINALDO PINO
+      </Link>
 
-      {/* Desktop Menu */}
-      <ul className="hidden md:flex">
-        {siteConfig.navigation.map((item) => (
-          <li key={item}>
-            <Link to={item} smooth={true} duration={500}>
-              {item.charAt(0).toUpperCase() + item.slice(1)}
+      {/* Desktop Nav */}
+      <ul className="hidden md:flex items-center gap-2">
+        {siteConfig.navItems.map((item) => (
+          <li key={item.id} className="px-0">
+            <Link
+              to={item.id}
+              smooth={true}
+              duration={500}
+              spy={true}
+              className="font-mono text-[10px] tracking-[2px] uppercase text-muted hover:text-cream transition-colors duration-300 px-5 py-2 cursor-pointer"
+              activeClass="!text-cyan"
+            >
+              {item.label}
             </Link>
           </li>
         ))}
+        <li className="px-0 ml-3">
+          <a
+            href={resume}
+            className="font-mono text-[10px] tracking-[2px] uppercase text-cyan border border-cyan/40 px-5 py-2 hover:bg-cyan/10 transition-all duration-300"
+          >
+            Download CV
+          </a>
+        </li>
       </ul>
 
-      {/* Hamburger Menu */}
+      {/* Mobile Toggle */}
       <button
         onClick={handleClick}
-        className="md:hidden z-30"
+        className="md:hidden z-30 text-cream text-lg"
         aria-label={nav ? "Close menu" : "Open menu"}
-        aria-expanded={nav}
       >
         {!nav ? <FaBars /> : <FaTimes />}
       </button>
@@ -95,34 +90,31 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 z-10 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 z-10 w-full h-screen bg-void flex flex-col justify-center items-center"
         }
       >
-        {siteConfig.navigation.map((item) => (
-          <li
-            key={item}
-            className="py-6 text-4xl hover:scale-125 transition-transform duration-300"
-          >
-            <Link onClick={handleClick} to={item} smooth={true} duration={500}>
-              {item.charAt(0).toUpperCase() + item.slice(1)}
+        {siteConfig.navItems.map((item) => (
+          <li key={item.id} className="py-5 px-0">
+            <Link
+              onClick={handleClick}
+              to={item.id}
+              smooth={true}
+              duration={500}
+              className="font-serif text-3xl font-semibold text-cream hover:text-cyan transition-colors duration-300"
+            >
+              {item.label}
             </Link>
           </li>
         ))}
-        <div className="flex flex-row my-4">
-          {socialLinks.map((link) => (
-            <SocialLink key={link.label} {...link} variant="mobile" />
-          ))}
-        </div>
+        <li className="mt-6 px-0">
+          <a
+            href={resume}
+            className="font-mono text-sm text-cyan border border-cyan/40 px-6 py-3 hover:bg-cyan/10 transition-all duration-300"
+          >
+            Download CV
+          </a>
+        </li>
       </ul>
-
-      {/* Social Icons - Desktop */}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
-        <ul>
-          {socialLinks.map((link) => (
-            <SocialLink key={link.label} {...link} variant="desktop" />
-          ))}
-        </ul>
-      </div>
     </div>
   );
 };

@@ -2,29 +2,122 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Outfit:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap');
 
 @layer base {
     body {
-        @apply font-[Raleway];
+        @apply font-body text-cream bg-void;
+        -webkit-font-smoothing: antialiased;
     }
     li {
-        @apply px-4;
         @apply cursor-pointer;
+    }
+    ::selection {
+        background: #1abbec;
+        color: #0a0a0a;
     }
 }
 
-.content-div {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 250px;
+/* Film grain overlay */
+.grain-overlay {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+    background-size: 200px;
 }
 
-.content-div:hover {
-    background-image: linear-gradient(
-        to right,
-        rgba(165, 215, 248, 0.8),
-        hsla(199, 99%, 28%, 0.8)
-    )!important;
+/* Skill pill hover */
+.skill-pill {
+    @apply transition-all duration-300;
+}
+.skill-pill:hover {
+    border-color: #1abbec !important;
+    color: #1abbec !important;
+}
+
+/* Gallery project image zoom */
+.gallery-img-wrap {
+    @apply overflow-hidden;
+}
+.gallery-item:hover .gallery-img-wrap img {
+    @apply scale-105;
+}
+.gallery-item:hover .gallery-link::after {
+    width: 40px;
+}
+
+/* Gallery link arrow */
+.gallery-link::after {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 1px;
+    background: #1abbec;
+    transition: width 0.3s ease;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+/* Form underline fields */
+.form-field {
+    @apply border-b border-elevated py-5 transition-colors duration-300;
+}
+.form-field:focus-within {
+    border-color: #1abbec;
+}
+.form-field input,
+.form-field textarea {
+    @apply bg-transparent w-full outline-none text-cream text-[15px] font-light;
+    font-family: 'Outfit', sans-serif;
+}
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    @apply text-muted/50;
+}
+.form-field label {
+    @apply block font-mono text-[9px] tracking-[2px] uppercase text-muted mb-2;
+}
+
+/* Experience card hover */
+.exp-card {
+    @apply transition-colors duration-500;
+}
+.exp-card:hover {
+    background: #111111;
+}
+.exp-card:hover .exp-year {
+    color: #1e1e1e;
+}
+
+/* CTA button */
+.btn-accent {
+    @apply font-mono text-[10px] tracking-[3px] uppercase px-8 py-4 transition-all duration-300;
+    background: #1abbec;
+    color: #0a0a0a;
+    font-weight: 700;
+}
+.btn-accent:hover {
+    background: #0d8fb5;
+    box-shadow: 0 4px 24px rgba(26, 187, 236, 0.2);
+}
+.btn-outline-subtle {
+    @apply font-mono text-[10px] tracking-[3px] uppercase px-8 py-4 border border-elevated text-warm transition-all duration-300;
+}
+.btn-outline-subtle:hover {
+    border-color: #1abbec;
+    color: #1abbec;
+}
+
+/* Section divider */
+.section-border {
+    @apply border-b border-elevated;
+}
+
+/* Scroll indicator */
+@keyframes scrollPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
 }

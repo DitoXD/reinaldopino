@@ -20,8 +20,6 @@ import vuejs from "../assets/vuejs.png";
 import linux from "../assets/linux.png";
 
 // Project images
-import cabinetSupplyJa from "../assets/cabinet-supply-ja.jpg";
-import risto from "../assets/risto.jpg";
 import negrilMuayThai from "../assets/negril-muay-thai.jpg";
 import forexJa from "../assets/forex-ja.jpg";
 
@@ -34,6 +32,7 @@ import logo from "../assets/logo-no-border.png";
 
 // Resume
 import resume from "../assets/Reinaldo Pino Resume 2026.pdf";
+import resumeAts from "../assets/Reinaldo Pino Resume 2026 (ATS).pdf";
 
 export const skillIcons = {
   flutter,
@@ -58,8 +57,6 @@ export const skillIcons = {
 };
 
 export const projectImages = {
-  "cabinet-supply-ja": cabinetSupplyJa,
-  risto,
   "negril-muay-thai": negrilMuayThai,
   "forex-ja": forexJa,
 };
@@ -69,4 +66,4 @@ export const backgroundImages = {
   "office-desk": officDesk,
 };
 
-export { logo, resume };
+export { logo, resume, resumeAts };
